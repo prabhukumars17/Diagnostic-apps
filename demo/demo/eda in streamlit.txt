@@ -1,0 +1,30 @@
+Steps tp follow:
+Open anaconda prompt
+
+1. Create a virtual environment 
+   > conda info --envs # checks available VEs
+   > conda create --name ml_demo python=3.8.13 anaconda   # creates a new VE called ml_demo
+
+2. activate the VE
+   > activate ml_demo
+
+3. Create a new folder called demo
+   >cd Desktop
+   >mkdir demo
+   >cd demo
+
+4.  Upgrade to latest streamlit version
+   >pip install streamlit --upgrade
+
+5. Open a python notebook and create a eda.py file
+   >jupyter notebook
+   >%%writefile app.py
+
+6.Type the follwing in eda.py
+   >import streamlit as st
+   >st.title("The EDA Page")
+   >st.sidebar.success("Select a Plot ")
+
+7. Run the streamlit app
+   > streamlit run app.py
+
